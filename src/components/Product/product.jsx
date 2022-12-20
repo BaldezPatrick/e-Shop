@@ -9,6 +9,11 @@ const Product = ({id, title, price, rating, image}) => {
                     <p>{title}</p>
                     <p className="product_price">${price}</p>
                     <div className="product_rating">
+                        {Array(rating)
+                        .fill()
+                        .map((_, i) => (
+                            <p>⭐</p>
+                        ))}
                     </div>
                 </section>
 
