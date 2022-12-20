@@ -1,18 +1,19 @@
 import React from "react";
 import './product.css'
 
-const Product = () => {
+const Product = ({id, title, price, rating, image}) => {
     return (
         <>
             <main className="product">
                 <section className="product_info">
-                    <p>Title</p>
-                    <p className="product_price">$30</p>
-                    <div className="product_rating">⭐⭐⭐⭐⭐</div>
+                    <p>{title}</p>
+                    <p className="product_price">${price}</p>
+                    <div className="product_rating">
+                    </div>
                 </section>
 
-                <img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bag" />
-                
+                <img src={image} alt="Bag" />
+
                 <button>Add to Basket</button>
             </main>
         </>
