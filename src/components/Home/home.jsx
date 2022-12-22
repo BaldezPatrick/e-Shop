@@ -8,15 +8,22 @@ const Home = () => {
             <main className="home">
                 <section className="home_container">
 
-                    <img src="https://images.pexels.com/photos/5632371/pexels-photo-5632371.jpeg?auto=compress&cs=tinysrgb&w=400" alt="a supermarket trolley" className="home_img" />
+                    <img src="https://images.pexels.com/photos/6214452/pexels-photo-6214452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a supermarket trolley" className="home_img" />
 
                     <div className="home_row">
                         <Product
-                        id={123}
-                        title={'Teste'}
-                        price={300}
-                        rating={3}
-                        image="https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            id={123}
+                            title={'Bag'}
+                            price={300}
+                            rating={3}
+                            image="https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        />
+                        <Product
+                            id={124}
+                            title={"Guitar"}
+                            price={2000}
+                            rating={5}
+                            image="https://images.pexels.com/photos/1010519/pexels-photo-1010519.jpeg?auto=compress&cs=tinysrgb&w=400"
                         />
                     </div>
 
@@ -25,7 +32,7 @@ const Home = () => {
                     </div>
 
                     <div className="home_row">
-                    
+
                     </div>
                 </section>
             </main>
