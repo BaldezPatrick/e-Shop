@@ -1,10 +1,13 @@
+import React from 'react';
 import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import routers from "./Routes/Routes";
 
 function App() {
   return (
-    <div className="App">
-      <h1>OLÁ</h1>
-    </div>
+    <React.StrictMode>
+      <RouterProvider router={routers} />
+    </React.StrictMode>
   );
 }
 
