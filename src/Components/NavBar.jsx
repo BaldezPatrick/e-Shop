@@ -15,17 +15,20 @@ const NavBar = () => {
               <FaBars />
             </button>
           </div>
+          <ul className="nav-links">
+            {links.map((link) => {
+              const { id, text, url } = link;
+              return (
+                <li key={id}>
+                  <Link to={url}>{text}</Link>
+                </li>
+              );
+            })}
+          </ul>
+          <div>
+            <h1>Card Buttons</h1>
+          </div>
         </div>
-        <ul className="nav-links">
-          {links.map((link) => {
-            const { id, text, url } = link;
-            return (
-              <li key={id}>
-                <Link to={url}>{text}</Link>
-              </li>
-            );
-          })}
-        </ul>
       </NavContainer>
     </>
   );
